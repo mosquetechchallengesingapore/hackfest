@@ -1,4 +1,6 @@
-export function meta() {
+import type { Route } from "./+types/mtc2026";
+
+export function meta({}: Route.MetaArgs) {
   return [
     { title: "2026 MTC Hackathon – Mosque Tech Challenge" },
     {
@@ -130,6 +132,52 @@ export default function Home() {
               </p>
             </li>
           </ol>
+        </section>
+
+        <section
+          id="side-events"
+          className="space-y-6 border-t border-slate-800 pt-10"
+        >
+          <h2 className="text-2xl font-semibold">Side Events</h2>
+          <p className="text-sm md:text-base text-slate-200 max-w-2xl">
+            Leading up to the hackathon, join our side events to learn, network,
+            and get to know the Mosque Tech Challenge community.
+          </p>
+
+          <div className="grid gap-4 text-sm text-slate-200 md:grid-cols-3">
+            <article className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 space-y-2">
+              <p className="text-xs font-medium uppercase tracking-wide text-sky-300">
+                Example · Workshop
+              </p>
+              <h3 className="text-sm font-semibold">Intro to Hackathon &amp; Ideation</h3>
+              <p className="text-xs text-slate-300">
+                A short session to explain how Mosque Tech Challenge works and
+                help teams start thinking about problem statements.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 space-y-2">
+              <p className="text-xs font-medium uppercase tracking-wide text-sky-300">
+                Example · Community
+              </p>
+              <h3 className="text-sm font-semibold">Meet the Mentors</h3>
+              <p className="text-xs text-slate-300">
+                An informal evening to meet mentors, ask questions, and get
+                feedback on early ideas.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 space-y-2">
+              <p className="text-xs font-medium uppercase tracking-wide text-sky-300">
+                Example · Online
+              </p>
+              <h3 className="text-sm font-semibold">Tech Stack Q&amp;A</h3>
+              <p className="text-xs text-slate-300">
+                A virtual Q&amp;A to help teams choose tools, frameworks, and
+                platforms for their hackathon projects.
+              </p>
+            </article>
+          </div>
         </section>
 
         <section
