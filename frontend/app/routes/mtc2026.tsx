@@ -2,7 +2,7 @@ import type { Route } from "./+types/mtc2026";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "2026 MTC Hackathon – Mosque Tech Challenge" },
+    { title: "Mosque Tech Challenge Hackathon" },
     {
       name: "description",
       content: "Landing page for the 2026 MTC Hackathon, part of the Mosque Tech Challenge initiative.",
